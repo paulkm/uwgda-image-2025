@@ -56,3 +56,7 @@ dependencies:
   - shapely
   - xarray-spatial
   - zarr
+  
+  - pip:
+   - matplotlib-scalebar
+   - easysnowdata
