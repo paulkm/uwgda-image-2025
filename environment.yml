@@ -58,5 +58,5 @@ dependencies:
   - zarr
   
   - pip:
-   - matplotlib-scalebar
-   - easysnowdata
+    - matplotlib-scalebar
+    - easysnowdata
