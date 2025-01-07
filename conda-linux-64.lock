@@ -1,5 +1,5 @@
 Activating profile: /srv/conda/etc/profile.d/conda.sh
-Activating profile: /srv/conda/etc/profile.d/mamba.sh
+# Activating profile: /srv/conda/etc/profile.d/mamba.sh
 # This file may be used to create an environment using:
 # $ conda create --name <env> --file <this file>
 # platform: linux-64
