@@ -31,7 +31,7 @@ jobs:
         docker run ${{ env.DOCKER_IMAGE }}:latest conda list --explicit > conda-linux-64.lock
 
     - name: Save package list
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: lockfile
         path: conda-linux-64.lock
