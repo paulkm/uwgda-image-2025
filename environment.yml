@@ -55,7 +55,6 @@ dependencies:
   - seaborn
   - shapely
   - xarray-spatial
-  - zarr
-  
-  - pip:
+  - zarr 
+#  - pip:
 #    - easysnowdata
