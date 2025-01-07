@@ -8,15 +8,15 @@ on:
       - 'README.md'
       - '.gitignore'
 
+env:
+  DOCKER_IMAGE: "uwgda/uwgda-image-2025"
+
 jobs:
   build-image-without-pushing:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
     - name: Checkout PR
-      uses: actions/checkout@v2
-
-    - name: Set Docker Image Name Environment Variable
-      run: cat .env >> $GITHUB_ENV
+      uses: actions/checkout@v3
 
     - name: Build Only
       uses: jupyterhub/repo2docker-action@master
