@@ -56,5 +56,3 @@ dependencies:
   - shapely
   - xarray-spatial
   - zarr 
-#  - pip:
-#    - easysnowdata
