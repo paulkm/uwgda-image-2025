@@ -42,7 +42,7 @@ dependencies:
   - pyogrio
   - pyproj
   - pystac
-  - python
+  - python==3.10
   - rasterio
   - rasterstats>=0.17.1
   - rio-cogeo
