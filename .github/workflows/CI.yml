@@ -9,11 +9,11 @@ on:
       - '.gitignore'
 
 env:
-  DOCKER_IMAGE: "uwgda/uwgda-image-2025"
+  DOCKER_IMAGE: "paulkm/uwgda-image-2025"
 
 jobs:
   build-image-and-push:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
     - name: Checkout Repo
       uses: actions/checkout@v3
@@ -29,16 +29,6 @@ jobs:
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         IMAGE_NAME: ${{ env.DOCKER_IMAGE }}
         ADDITIONAL_TAG: ${{ steps.calver.outputs.version }}
-
-    - name: Also Push To quay.io
-      id: push-to-quay
-      uses: redhat-actions/push-to-registry@v2
-      with:
-        image: ${{ env.DOCKER_IMAGE }}
-        tags: ${{ steps.calver.outputs.version }}
-        registry: quay.io
-        username: ${{ secrets.QUAY_USERNAME }}
-        password: ${{ secrets.QUAY_PASSWORD }}
 
     - name: Report Image Size and Conda Packages
       if: always()

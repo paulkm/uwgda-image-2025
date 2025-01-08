@@ -25,7 +25,7 @@ dependencies:
   - ipyleaflet
   - ipympl
   - ipywidgets
-  - jupyterhub-singleuser 
+  - jupyterhub-singleuser==4.0.2
   - jupyter-server-proxy
   - jupyterlab
   - matplotlib-base
