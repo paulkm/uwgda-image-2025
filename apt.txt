@@ -1,7 +1,1 @@
-vim
-emacs
-nano
-wget
-man
-manpages
 git
