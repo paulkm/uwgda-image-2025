@@ -55,5 +55,6 @@ dependencies:
   - seaborn
   - shapely
   - terminado==0.17.1
+  - tornado==6.3.3
   - xarray-spatial
   - zarr 
