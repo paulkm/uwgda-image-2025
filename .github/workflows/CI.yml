@@ -23,7 +23,7 @@ jobs:
       run: echo "::set-output name=version::$(date +'%Y.%m.%d')"
 
     - name: Build and Push to DockerHub
-      uses: jupyterhub/repo2docker-action@v2023.6.0
+      uses: jupyterhub/repo2docker-action@master
       with:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
