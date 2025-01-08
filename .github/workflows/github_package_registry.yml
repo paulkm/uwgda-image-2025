@@ -16,4 +16,4 @@ jobs:
         DOCKER_USERNAME: ${{github.actor}}
         DOCKER_PASSWORD: ${{secrets.TOKEN_GITHUB}}
         DOCKER_REGISTRY: "ghcr.io"
-        IMAGE_NAME: "uwgda/uwgda-image-2025"
+        IMAGE_NAME: "paulkm/uwgda-image-2025"
