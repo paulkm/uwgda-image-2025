@@ -14,6 +14,6 @@ jobs:
       uses: jupyterhub/repo2docker-action@master
       with: 
         DOCKER_USERNAME: ${{github.actor}}
-        DOCKER_PASSWORD: ${{secrets.GITHUB_TOKEN}}
+        DOCKER_PASSWORD: ${{secrets.TOKEN_GITHUB}}
         DOCKER_REGISTRY: "ghcr.io"
         IMAGE_NAME: "UWGDA/uwgda-image-2025"
