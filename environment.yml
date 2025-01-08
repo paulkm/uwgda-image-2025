@@ -54,5 +54,6 @@ dependencies:
   - scipy
   - seaborn
   - shapely
+  - terminado==0.17.1
   - xarray-spatial
   - zarr 
