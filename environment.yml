@@ -27,7 +27,7 @@ dependencies:
   - ipywidgets
   - jupyterhub-singleuser 
   - jupyter-server-proxy
-  - jupyterlab
+  - jupyterlab==3.6.1
   - matplotlib-base
   - matplotlib-scalebar
   - nbgitpuller
