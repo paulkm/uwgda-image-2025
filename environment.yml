@@ -27,7 +27,7 @@ dependencies:
   - ipywidgets
   - jupyterhub-singleuser 
   - jupyter-server-proxy
-  - jupyterlab==3.6.1
+  - jupyterlab
   - matplotlib-base
   - matplotlib-scalebar
   - nbgitpuller
@@ -42,7 +42,7 @@ dependencies:
   - pyogrio
   - pyproj
   - pystac
-  - python==3.10
+  - python
   - rasterio
   - rasterstats>=0.17.1
   - rio-cogeo
